@@ -78,6 +78,11 @@ header a:visited {
 
 }
 
+.carousel-item { 
+    max-height: 700px;
+
+}
+
 main { 
     justify-content: center;
     text-align: center;
@@ -93,6 +98,12 @@ main .gallery {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: 1fr;
+}
+
+.container .row { 
+    justify-content: space-between;
+    padding: 3rem;
+
 }
 
 #titulos { 
@@ -160,6 +171,11 @@ footer {
 }
 
 /* sección de historia */
+
+.card-group .card img { 
+    height: 60%;
+
+}
 
 
 

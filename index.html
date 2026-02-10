@@ -34,10 +34,10 @@
                         <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./pages/historia.html">Historia</a>
+                        <a class="nav-link active" aria-current="page" href="./pages/historia.html">HISTORIA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/torneos.html">Torneos</a>
+                        <a class="nav-link active" aria-current="page" href="./pages/torneos.html">TORNEOS</a>
                     </li>
                 </ul>
             </div>
@@ -88,50 +88,44 @@
                 </a>
                 
             </div>
-             
-        
-            <div class="titulo-resumen">
-                <h2 class="titulo"> 
-                    <a href="/pages/torneos.html"> TORNEOS MÁS DESTACADOS </a>
-                </h2>
+
+
+            <div class="row p-3 justify-content-evenly">
+
+              <div class="card" style="width: 18rem; ">
+                <img src="./img/au-open.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Australian Open</h5>
+                  <p class="card-text"> El Grand Slam de Autralia, primero del año</p>
+                  <a href="./pages/torneos.html" class="btn btn-primary">Más torneos</a>
+                </div>
+              </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="./img/rg-open.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Roland Garros</h5>
+                <p class="card-text">El Grand Slam de Paris, el segundo del año</p>
+                <a href="./pages/torneos.html" class="btn btn-primary">Más torneos</a>
+              </div>
+              </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="./img/wimbledon.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Wimbledon</h5>
+                <p class="card-text">El Grand Slam de Inglaterra, el tercero del año</p>
+                <a href="./pages/torneos.html" class="btn btn-primary">Más torneos</a>
+              </div>
             </div>
-            
-            <section class="gallery">
-                
-                <div class="australia item1">
-                    <img src="img/au-open.jpg" alt="">
-                        <h3>
-                            <a href="/pages/torneos.html"> Australian Open </a>
-                        </h3>
-                        
-                </div>
-                
-                
-                <div class="rolandgarros item2">
-                 <img src="img/rg-open.jpg" alt="">
-                 
-                     <h3>
-                         <a href="/pages/torneos.html"> Roland Garros </a>
-                     </h3>
-                     
-                </div>
-                
-                <div class="wimbledon item3">
-                <img src="img/wimbledon.jpg" alt="">
-                 
-                     <h3>
-                         <a href="pages/torneos.html"> Wimbledon </a>
-                     </h3>
-        
-                </div>
-        
-            </section>
+
+            </div>
         
         </main>
         
         <!-- form con bootstrap -->
 
-        <form class="row g-4">
+        <form class="row p-3 g-4">
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">Nombre</label>
     <input type="email" class="form-control" id="inputEmail4">
