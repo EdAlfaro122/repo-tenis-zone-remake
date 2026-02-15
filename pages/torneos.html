@@ -10,73 +10,197 @@
 <body>
 
     <header>
-            <img src="../img/logo.png" alt="">
+        <img src="../img/logo.png" alt="logo de la pagina">
 
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg me-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="historia.html">HISTORIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./torneos.html">TORNEOS</a>
-                    </li>
-                </ul>
-            </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="historia.html">HISTORIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./torneos.html">TORNEOS</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
     <h1 class="titulo">TORNEOS MÁS DESTACADOS</h1>
 
     <p> Durante todo el año hay un montón de torneos que disfrutar, pero los 4 más importantes son sin dudas los Grand Slam, aquí tendrás toda la información de cada uno de estos. </p>
 
     <main class="boxies">
-
         <div class="box1">
-            <img src="../img/au-open.jpg" alt="">
-                
+            <img src="../img/au-open.jpg" alt="autralian open logo">
             <h3 class="nombres"> Australian Open </h3>
-                
             <P> El primero del año, se juega en Enero en Australia y da inicio oficial a la temporada en el tenis. </P>
         </div>
             
         <div class="box2">
-            <img src="../img/rg-open.jpg" alt="">
-                
+            <img src="../img/rg-open.jpg" alt="roland garros logo">
             <h3 class="nombres"> Roland Garros </h3>
-                
             <p> El Roland Garros se juega a partir de Mayo en Paris, es de los torneos más populares. </p>
         </div>
        
         <div class="box3">
-            <img src="../img/wimbledon.jpg" alt="">
-                
+            <img src="../img/wimbledon.jpg" alt="wimbledon logo"> 
             <h3 class="nombres"> Wimbledon </h3>
-                
             <p> Inglaterra se vuelve la capital del tenis con este increíble torneo, el único en cesped. </p>
         </div>
             
         <div class="box4">
-            <img src="../img/us-open.jpg" alt="">
-                
+            <img src="../img/us-open.jpg" alt="us open logo">  
             <h3 class="nombres"> US Open </h3>
-                
             <p> El último torneo del año, se juega en USA y es donde las estrellas se dejan ver. </p>
         </div>
-
     </main>
 
+
+    <!-- usaré bootstrap para hablar un poco de los demás torneos y aprovechar más las columnas en esta página -->
+
+    <div class="row masters text-center">
+        <h2 class="titulo"> Masters 1000 </h2>
+        <p>Los ATP Masters 1000​ son una serie de nueve torneos oficiales de tenis masculino que forman parte del ATP Tour, organizados anualmente por la Asociación de Tenistas Profesionales, que se celebran en Europa, Norteamérica y Asia.</p>
+
+        <div class="card mb-3 col-lg-4 col-md-6">
+            <div class="row g-0 p-1">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="../img/indian-wells.jpg" class="img-fluid rounded-start" alt="indian wells">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Indian Wells</h5>
+                    <p class="card-text">Indian Wells, situado en el Valle de Coachella, California, es una ciudad conocida principalmente por albergar el BNP Paribas Open, uno de los torneos de tenis más prestigiosos del mundo, considerado el "quinto Grand Slam". Este evento se celebra anualmente en marzo. </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 col-md-6">
+            <div class="row g-0 p-1">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="../img/miami-open.jpg" class="img-fluid rounded-start" alt="miami open">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Miami Open</h5>
+                    <p class="card-text">El Miami Open 2026 presentado por Itaú se celebrará del 15 al 29 de marzo de 2026 en el Hard Rock Stadium de Miami Gardens, Florida. Este prestigioso torneo ATP/WTA Masters 1000 es uno de los eventos tenísticos más importantes fuera de los Grand Slams, atrayendo a las mejores estrellas del mundo a canchas duras.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 col-md-6">
+            <div class="row g-0 p-1">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="../img/montecarlo-open.jpg" class="img-fluid rounded-start" alt="montecarlo open">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Montecarlo Open</h5>
+                    <p class="card-text">El Rolex Monte-Carlo Masters 2026 es un prestigioso torneo ATP Masters 1000 que se celebra del 5 al 12 de abril de 2026 en el Monte-Carlo Country Club, situado en Roquebrune-Cap-Martin, Francia. Se juega sobre tierra batida, marcando el inicio de la temporada europea en esta superficie.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 col-md-6">
+            <div class="row g-0 p-1">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="../img/madrid-open.jpg" class="img-fluid rounded-start" alt="madrid open">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Madrid Open</h5>
+                    <p class="card-text">El Mutua Madrid Open 2026 se celebrará del 20 de abril al 3 de mayo en la Caja Mágica, consolidándose como uno de los principales torneos combinados ATP Masters 1000 y WTA 1000 sobre tierra batida.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 col-md-6">
+            <div class="row g-0 p-1">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="../img/roma-open.jpg" class="img-fluid rounded-start" alt="roma open">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Roma Open</h5>
+                    <p class="card-text">El Internazionali BNL d'Italia (o Masters de Roma) es un torneo de tenis de primer nivel (ATP 1000 y WTA 1000) celebrado en polvo de ladrillo en el Foro Itálico. En 2026, la fase final se centra en la segunda y tercera semana de mayo, sirviendo de preparación clave para Roland Garros.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 col-md-6">
+            <div class="row g-0 p-1">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="../img/canada-open.jpg" class="img-fluid rounded-start" alt="canada open">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Canadá Open</h5>
+                    <p class="card-text">El National Bank Open 2026 (Abierto de Canadá) es un prestigioso torneo de tenis combinado ATP/WTA 1000 jugado en canchas duras, alternando ciudades entre Toronto y Montreal.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 col-md-6">
+            <div class="row g-0 p-1">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="../img/cincinnati-open.jpg" class="img-fluid rounded-start" alt="cincinnati open">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Cincinnati Open</h5>
+                    <p class="card-text">El Cincinnati Open 2026, un destacado torneo ATP Masters 1000 y WTA 1000 de pista dura, se llevará a cabo del 11 al 23 de agosto en el Lindner Family Tennis Centre en Mason, Ohio, tras una importante inversión de $260 millones en mejoras.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 col-md-6">
+            <div class="row g-0 p-1">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="../img/miami-open.jpg" class="img-fluid rounded-start" alt="miami open">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Shanghái Open</h5>
+                    <p class="card-text">El Rolex Shanghai Masters es un destacado torneo ATP Masters 1000 masculino celebrado anualmente en octubre en el Qizhong Forest Sports City Arena en Shanghái, China. Siendo el único Masters 1000 en Asia.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 col-lg-4 col-md-6">
+            <div class="row g-0 p-1">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="../img/montecarlo-open.jpg" class="img-fluid rounded-start" alt="montecarlo open">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Paris Open</h5>
+                    <p class="card-text">El Rolex Paris Masters 2025 de tenis se celebrará del 27 de octubre al 2 de noviembre de 2025 en el Paris La Défense Arena, siendo un torneo ATP Masters 1000 de pista dura bajo techo. En 2025, Jannik Sinner se coronó campeón, arrebatando el número 1 del mundo.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
     <footer> Todos los derechos reservados </footer>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

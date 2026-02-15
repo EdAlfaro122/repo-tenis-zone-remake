@@ -6,53 +6,51 @@
 }
 
 body { 
-    background-color: #6F8F72;
+    background-color: #EAEFEF;
     color: whitesmoke;
 
 }
 
-
-
 header { 
-    background-color: #F2A65A;
+    background-color: #25343F;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    
-}
-
-header nav ul { 
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    padding: 2rem;
-    justify-content: center;
 }
 
 header a:hover { 
     font-size: large;
+    font-weight: bolder;
 }
 
 header a:visited { 
-    color: black;
+    color: #25343F;
 
 }
 
+.navbar .nav-link,
+.navbar .nav-link.active {
+  color: #EAEFEF !important;
+}
+
+
+
 .titulo { 
-    background-color: #E8E2D8;
+    background-color: #EAEFEF;
     color: black;
+    justify-content: center;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .titulo:active { 
-    background-color: #BFC6C4;
+    background-color: #BFC9D1;
 
 }
 
 
 #titulos { 
-    background-color: #BFC6C4;
+    background-color: #EAEFEF;
     color: black;
 
 }
@@ -68,12 +66,12 @@ header a:visited {
     text-align: center;
     width: 18rem;
     height: 5rem;
-    border: 2px solid whitesmoke;
+    border: 3px solid #25343F;
     padding: 1rem;
 }
 
 .link h3:hover { 
-    background-color: #F2A65A;
+    background-color: #BFC9D1;
     font-size: xx-large;
 
 }
@@ -128,7 +126,13 @@ p {
     gap: 1rem;
 }
 
+form label { 
+    color: #25343F;
+
+}
+
 footer { 
+    color: #25343F;
     background-color: #BFC6C4;
     text-align: center;
     padding: 1.5rem;
@@ -167,7 +171,7 @@ footer {
 
     .formulario input[type="submit"] {
         grid-column: span 2;
-
+    }
 }
 
 /* sección de historia */
@@ -177,55 +181,9 @@ footer {
 
 }
 
-
-
-.finalistas { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+main h5 { 
     padding: 1rem;
 }
-
-
-.finalistas { 
-
-    .novak { 
-        display: flex;
-        justify-content: center;
-    }
-    
-    .nadal { 
-        display: flex;
-        justify-content: center;
-    }
-
-    .medveded { 
-        display: flex;
-        justify-content: center;
-
-    }
-}
-
-
-@media screen and (max-width: 764px) {
-
-    div .finalistas { 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 80%);
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    div .finalistas { 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 90%;
-
-    }
-}
-
 
 /* sección de torneos */
 
@@ -242,6 +200,7 @@ footer {
     grid-template-rows: repeat(4, 1fr);
 }
 
+
 @media screen and (min-width: 764px) {
 
     .boxies { 
@@ -253,13 +212,12 @@ footer {
 }
 
 
-@media screen and (min-width:1024px) {
-
+@media screen and (min-width: 1024px) { 
+    
     .boxies { 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 100%);
         padding-top: 1rem;
     }
-
 }
