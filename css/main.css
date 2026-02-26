@@ -1,0 +1,20 @@
+/* comentario en saas y css */
+header {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 300px;
+  height: 5px;
+}
+header .menu ul {
+  background-color: tomato;
+}
+
+main {
+  background-color: pink;
+}
+
+/*# sourceMappingURL=main.css.map */

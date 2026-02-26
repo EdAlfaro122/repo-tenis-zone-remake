@@ -1,31 +1,18 @@
-/* Reset de CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* comentario en saas y css */
+header {
+  background-color: #25343F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-body { 
-    background-color: #EAEFEF;
-    color: whitesmoke;
-
+header a:hover {
+  font-size: large;
+  font-weight: bolder;
 }
 
-header { 
-    background-color: #25343F;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-}
-
-header a:hover { 
-    font-size: large;
-    font-weight: bolder;
-}
-
-header a:visited { 
-    color: #25343F;
-
+header a:visited {
+  color: #25343F;
 }
 
 .navbar .nav-link,
@@ -33,191 +20,147 @@ header a:visited {
   color: #EAEFEF !important;
 }
 
-
-
-.titulo { 
-    background-color: #EAEFEF;
-    color: black;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
+.titulo {
+  background-color: #EAEFEF;
+  color: #25343F;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
 }
 
-.titulo:active { 
-    background-color: #BFC9D1;
-
+.link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.link a {
+  text-decoration: none;
+}
+.link h3 {
+  color: #25343F;
+  text-align: center;
+  width: 18rem;
+  height: 5rem;
+  border: 3px solid #25343F;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.link h3:hover {
+  background-color: #25343F;
+  font-size: xx-large;
+  color: #EAEFEF;
 }
 
-
-#titulos { 
-    background-color: #EAEFEF;
-    color: black;
-
+.carousel-item {
+  max-height: 700px;
 }
 
-.link { 
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 1100px;
+  padding: 1.5rem;
+  margin: 0 auto;
+  gap: 20px;
 }
 
-
-.link h3 { 
-    text-align: center;
-    width: 18rem;
-    height: 5rem;
-    border: 3px solid #25343F;
-    padding: 1rem;
+.card {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: whitesmoke;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
 }
 
-.link h3:hover { 
-    background-color: #BFC9D1;
-    font-size: xx-large;
-
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 
-.carousel-item { 
-    max-height: 700px;
-
+.card img {
+  width: 100%;
+  height: 320px;
+}
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+.card .contenido p {
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+.card .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.card .contenido a:hover {
+  background: #2fb4cc;
+  color: #fff;
 }
 
-main { 
-    justify-content: center;
-    text-align: center;
+@media (min-width: 764px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #25343F;
+  color: #EAEFEF;
 }
 
-main div img { 
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
+#titulos {
+  background-color: #25343F;
+  color: #EAEFEF;
+  text-align: center;
+  padding: 1.5rem;
 }
 
-main .gallery { 
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr;
+main h5 {
+  text-align: center;
+  padding: 1rem;
+  color: #25343F;
 }
 
-.container .row { 
-    justify-content: space-between;
-    padding: 3rem;
-
+.container-torneos {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 1100px;
+  padding: 1.5rem;
+  margin: 0 auto;
+  gap: 20px;
 }
 
-#titulos { 
-    padding: 1.5rem;
+@media (min-width: 764px) {
+  .container-torneos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .container-torneos {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-p { 
-    padding: 1rem;
-    text-align: center;
-
-}
-
-.formulario { 
-    text-align: center;
-}
-
-.formulario form { 
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    padding: 1.5rem;
-    gap: 1rem;
-}
-
-form label { 
-    color: #25343F;
-
-}
-
-footer { 
-    color: #25343F;
-    background-color: #BFC6C4;
-    text-align: center;
-    padding: 1.5rem;
-    font-weight: bolder;
-}
-
-@media screen and (min-width: 768px) {
-
-    header { 
-        flex-direction: row;
-    }
-
-    main .gallery { 
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .formulario form { 
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-} 
-
-@media screen and (min-width: 1024px) {
-
-    main .gallery { 
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .formulario form { 
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .formulario input[type="submit"] {
-        grid-column: span 2;
-    }
-}
-
-/* sección de historia */
-
-.card-group .card img { 
-    height: 60%;
-
-}
-
-main h5 { 
-    padding: 1rem;
-}
-
-/* sección de torneos */
-
-
-    main div img { 
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
-}
-
-.boxies { 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
-
-
-@media screen and (min-width: 764px) {
-
-    .boxies { 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 50%);
-    }
-    
-}
-
-
-@media screen and (min-width: 1024px) { 
-    
-    .boxies { 
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 100%);
-        padding-top: 1rem;
-    }
-}
+/*# sourceMappingURL=style.css.map */
