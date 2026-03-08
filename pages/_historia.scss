@@ -1,0 +1,24 @@
+//variables
+@use "../sass/utilities/variables" as *;
+@use "../sass/utilities/listas" as *;
+@use "../sass/utilities/mixin" as *;
+
+// SECCIÓN DE HISTORIA
+/* Sección de historia */
+
+#titulos { 
+    background-color: nth($lista-colores , 3);
+    color: nth($lista-colores , 1);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+
+  h5 {
+    text-align: center;
+    @include padding;
+    color: nth($lista-colores , 3);
+  }
+
+}

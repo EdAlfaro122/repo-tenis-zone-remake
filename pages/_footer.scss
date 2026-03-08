@@ -1,0 +1,14 @@
+//variables
+@use "../sass/utilities/variables" as *;
+@use "../sass/utilities/listas" as *;
+@use "../sass/utilities/mixin" as *;
+
+// Footer de todas las páginas
+/* Footer de todas las páginas */
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: nth($lista-colores, 3 );
+  color: nth($lista-colores, 1 );
+}

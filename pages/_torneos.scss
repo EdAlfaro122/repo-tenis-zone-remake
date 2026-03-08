@@ -1,0 +1,20 @@
+//variables
+@use "../sass/utilities/variables" as *;
+@use "../sass/utilities/listas" as *;
+@use "../sass/utilities/mixin" as *;
+
+// SECCIÓN DE TORNEOS 
+/* Sección de torneos */
+
+
+.container-torneos {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 1300px;
+  padding: 1.5rem;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+

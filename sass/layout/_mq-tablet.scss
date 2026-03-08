@@ -1,0 +1,15 @@
+/* MQ de Tablet */
+
+@media (min-width: 764px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 764px) {
+  .container-torneos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

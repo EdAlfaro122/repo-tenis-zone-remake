@@ -1,0 +1,27 @@
+//variables
+@use "../sass/utilities/variables" as *;
+@use "../sass/utilities/listas" as *;
+@use "../sass/utilities/mixin" as *;
+
+/* Header */
+
+header { 
+    background-color: nth($lista-colores , 3);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+
+    a:hover { 
+    font-size: large;
+    font-weight: bolder;
+    }
+
+    a:visited { 
+    color: nth($lista-colores , 3);
+    }
+}
+
+.navbar .nav-link,
+.navbar .nav-link.active {
+  color: nth($lista-colores , 1) !important;
+}
