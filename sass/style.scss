@@ -4,17 +4,17 @@
 @use "utilities/mixin" as *;
 
 //Header
-@use "../pages/header";
+@use "pages/header";
 
 //Main
-@use "../pages/main";
+@use "pages/main";
 
 // Sección de historia
-@use "../pages/historia";
+@use "pages/historia";
 
 
 // Sección de torneos
-@use "../pages/torneos";
+@use "pages/torneos";
 
 
 // Mqs
@@ -23,7 +23,7 @@
 
 
 // Footer de todas las páginas
-@use "../pages/footer"
+@use "pages/footer"
 
 
 
